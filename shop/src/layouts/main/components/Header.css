@@ -1,0 +1,220 @@
+@import "./Root.css";
+
+body{
+    background-color: #F3F3F3;
+}
+
+.headerPosition{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eaeaea;
+    background-color: white;
+}
+
+.headerMain{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#logo img{
+    width: 120px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.home, .about, .pages, .blog, .contact{
+    color: #323232;
+    font-family: Jost-Medium;
+    font-size: 16px;
+    padding: 16px 0;
+    position: relative;
+}
+
+.home::before, .about::before, .pages::before, .blog::before, .contact::before{
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 14px;
+    width: 0;
+    height: 2px;
+    background-color: #ff6117;
+    transition: .2s;
+}
+
+.home:hover::before, .about:hover::before, .pages:hover::before, .blog:hover::before, .contact:hover::before{
+    width: 50%;
+}
+
+.home:hover, .about:hover, .pages:hover, .blog:hover, .contact:hover{
+    color: #ff5000;
+}
+
+.home::after, .about::after, .pages::after, .blog::after, .contact::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+    width: 0;
+    height: 2px;
+    background-color: #ff6117;
+    transition: .2s;
+}
+
+.home:hover::after, .about:hover::after, .pages:hover::after, .blog:hover::after, .contact:hover::after{
+    width: 50%;
+}
+
+.home:hover, .about:hover, .pages:hover, .blog:hover, .contact:hover{
+    color: #ff5000;
+}
+
+#register{
+    display: flex;
+    gap: 5px;
+}
+
+#login{
+    font-family: Jost-Medium;
+    padding: 6px 16px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    user-select: none;
+}
+
+#login:hover{
+    background-color: #016ee3;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+nav{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+nav form{
+    display: flex;
+}
+
+.search{
+    position: relative;
+}
+
+.search img{
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search input{
+    width: 600px;
+    height: 40px;
+    background-color: #e8e8e8;
+    outline: none;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    padding-left: 50px;
+    font-family: Jost-Medium;
+    font-size: 16px;
+}
+
+nav button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #343A40;
+    color: white;
+    border-radius: 0 6px 6px 0;
+    font-family: Jost-Medium;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav button:hover{
+    background-color: #25292e;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#wish i{
+    font-size: 23px;
+    cursor: pointer;
+    position: relative;
+}
+
+#wish i::after{
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 35px;
+    background-color: #dedede;
+}
+
+#cart i{
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#cart{
+    position: relative;
+}
+
+.basketCount{
+    width: 17px;
+    height: 17px;
+    background-color: #ef2136;
+    color: white;
+    border-radius: 100%;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    font-family: Jost-Regular;
+    font-size: 10px;
+    text-align: center;
+    line-height: 17px;
+    user-select: none;
+}
+
+.basketCount.hidden{
+    display: none;
+}

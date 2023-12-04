@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../../../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../../../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../../../fonts/Poppins-SemiBold.ttf);
+}
+
+.register{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(249 250 251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.registerForm{
+    padding: 50px 40px;    
+    border: 1px solid rgb(209 213 219);
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.signinMain{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registerForm input{
+    width: 420px;
+    height: 42px;
+    background-color: rgb(249 250 251);
+    border: 1px solid rgb(209 213 219);
+    border-radius: 8px;
+    padding-left: 12px;
+    outline: none;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.registerForm button{
+    height: 42px;
+    color: white;
+    background-color: #007BFF;
+    font-family: Jost-Medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    user-select: none;
+    font-size: 17px;
+    transition: .3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.registerForm button:hover{
+    background-color: #016ee3;
+}
+
+#signinCheckbox{
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+}
+
+.checkboxLabel{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.registerForm input:focus{
+    border: 2px solid #3F83F8;
+}
+
+.terms{
+    color: rgb(28 100 242);
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(17 24 39);
+    position: relative;
+}
+
+.label i{
+    position: absolute;
+    right: 20px;
+    top: 39px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(77, 77, 77);
+}
+
+#signinPassword{
+    padding-right: 50px;
+}
+
+label{
+    font-family: Jost-Medium;
+    user-select: none;
+    color: rgb(17 24 39);
+}
+
+.signup{
+    font-family: Jost-Medium;
+    font-size: 26px;
+    color: rgb(17 24 39);
+}
+
+.signupLink{
+    color: rgb(28 100 242);
+}
+
+.dontHave{
+    font-family: Jost-Medium;
+    color: rgb(17 24 39);
+}

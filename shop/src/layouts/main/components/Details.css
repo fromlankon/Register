@@ -1,0 +1,269 @@
+@import "./Root.css";
+
+body{
+    background-color: white;
+}
+
+#details{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.detailsMain{
+    width: 1000px;
+    display: flex;
+}
+
+.leftSide{
+    width: 500px;
+    height: 625px;
+}
+
+.detailsImage{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #e6eef6;
+    border-bottom: none;
+    background-color: #FCFCFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.detailsImage img{
+    width: 400px;
+    object-fit: cover;
+    padding: 50px;
+}
+
+.moreImages{
+    display: flex;
+}
+
+.moreImages div{
+    width: 125px;
+    height: 125px;
+    border: 1px solid #e6eef6;
+    background-color: #FCFCFC;
+    padding: 16px;
+}
+
+.moreImages div img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.rightSide{
+    width: 500px;
+    height: 625px;
+    background-color: white;
+    display: flex;
+    padding-left: 40px;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.brandName{
+    color: #a0aec0;
+    font-family: Jost-Medium;
+    letter-spacing: 2px;
+}
+
+.brandTitle{
+    font-family: Jost-Medium;
+    font-size: 24px;
+}
+
+.stars{
+    display: flex;
+    gap: 5px;
+}
+
+.yellowStar{
+    color: #FDC040;
+    font-size: 14px;
+}
+
+.grayStar{
+    color: #AEAEAE;
+    font-size: 14px;
+}
+
+.rate{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.rate::after{
+    content: "";
+    position: absolute;
+    right: -24px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #e2e8f0;
+}
+
+.rating{
+    font-family: Jost-Regular;
+    background-color: #FDC040;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.ratingSection{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.socialIcons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.socialIcons i{
+    color: #A0AEC0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.brandDescription{
+    font-family: Jost-Regular;
+    color: #4a5568;
+    line-height: 26px;
+    padding-right: 30px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 430px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 20px;
+}
+
+.colorOptions{
+    display: flex;
+    gap: 10px;
+}
+
+.setColor{
+    font-family: Jost-Regular;
+}
+
+.brandColor{
+    display: flex;
+    gap: 6px;
+}
+
+.colorWhite{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.colorDark{
+    width: 25px;
+    height: 25px;
+    background-color: #4a5568;
+    border: 2px solid #e2e8f0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.colorRed{
+    width: 25px;
+    height: 25px;
+    background-color: #f56565;
+    border: 2px solid #e2e8f0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.size{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select{
+    font-family: Jost-Regular;
+    border: 1px solid #cbd5e0;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.brandPrice{
+    font-family: Jost-Medium;
+    font-size: 22px;
+}
+
+.bottom{
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addTo{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.addToCart{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1d2d50;
+    color: white;
+    font-family: Jost-Medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.addToCart:hover{
+    background-color: #0F172A;
+}
+
+.addToWishList{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDF2F7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.addToWishList:hover{
+    background-color: #dbe2e8;
+}
+
+.addToWishList i{
+    color: #f56565;
+    font-size: 20px;
+    padding-top: 5px;
+}
